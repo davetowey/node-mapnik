@@ -16,6 +16,7 @@ platform:
 shallow_clone: true
 
 install:
+  - dir C:\Program Files (x86)\MSBuild
   - ps: Update-NodeJsInstallation (Get-NodeJsLatestBuild $env:nodejs_version) $env:Platform
   - node -e "console.log('node version ' + process.version + ' architecture ' + process.arch);"
   - node --version
