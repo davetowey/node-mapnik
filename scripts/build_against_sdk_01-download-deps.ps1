@@ -3,7 +3,7 @@ $msg_prefix='====================== '
 Try{
 
     Write-Output "$msg_prefix MAPNIK_VERSION: $env:MAPNIK_VERSION"
-    $mapnik_remote='https://mapnik.s3.amazonaws.com/dist/dev/mapnik-sdk.7z'
+    $mapnik_remote='https://mapnik.s3.amazonaws.com/dist/dev/mapnik-win-sdk-' + $env:Platform + '-v2.2.0-1892-g2b5b573.7z'
     $mapnik_local="$env:DL_DIR\mapnik-sdk.7z"
     $mapnik_unpacked="$env:MAPNIK_DIR"
 
